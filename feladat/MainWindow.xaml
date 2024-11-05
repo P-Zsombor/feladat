@@ -1,0 +1,47 @@
+﻿<Window x:Class="feladat.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:feladat"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Background="Gray">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="270"/>
+            <ColumnDefinition Width="340"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="Kolbász" FontSize="20"/>
+        <StackPanel Grid.Row="1" Grid.RowSpan="3">
+            <TextBlock Text="alma" FontSize="20"/>
+            <TextBlock Text="körte" FontSize="20"/>
+            <TextBlock Text="banán" FontSize="20"/>
+            <TextBlock Text="paradicsom" FontSize="20"/>
+        </StackPanel>
+        <TextBlock Text="Paprika" FontSize="20" Grid.Column="1"/>
+        <TextBlock Text="Sajt" FontSize="20" Grid.Column="2"/>
+        <TextBox Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <Button Grid.Row="2" Grid.Column="1"/>
+        <Border Grid.Row="2" Grid.Column="2" CornerRadius="20" Width="140" Height="120" Background="DarkCyan">
+            <TextBlock
+                Text="Trabant" 
+                FontSize="20"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+            />
+        </Border>
+        <StackPanel Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2">
+            <TextBlock Text="fehér" FontSize="20"/>
+            <TextBlock Text="sárga" FontSize="20"/>
+            <TextBlock Text="piros" FontSize="20"/>
+            <TextBlock Text="kolbász" FontSize="20"/>
+        </StackPanel>
+    </Grid>
+</Window>
